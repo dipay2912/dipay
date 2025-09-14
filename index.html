@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dipayyyyy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Home page</a></li>
+        <li><a href="#projects" class="nav-link">Project</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="modeToggle" aria-label="Toggle dark/light mode">🌗</button>  
+  </header>
+
+  <main>
+    <section id="home" class="scroll-animation">
+      <h1>Hello, I am Dipay</h1>
+      <p>Welcome to my portfolio.</p>
+      <div class="social-links">
+        <a href="https://github.com/dipay2912" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://linkedin.com/in/dipay2912" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Project</h2>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="Game Server">Game Server</button>
+      </div>
+
+      <div class="projects">
+        <div class="project-card scroll-animation" data-project="1" data-category="web">
+          <img class="lazy" data-src="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2022/10/portofolio-adham-dannaway-2-1024x519.webp" alt="Thumbnail Portfolio Website" />
+          <h3>Website Portfolio</h3>
+          <p>Personal portfolio with modern design</p>
+          <button class="btn-details" data-project="1">Lihat Detail</button>
+        </div>
+        <div class="project-card scroll-animation" data-project="2" data-category="app">
+          <img class="lazy" data-src="https://cdn.discordapp.com/attachments/1381375677890298019/1416869622262534164/image.png?ex=68c86a2a&is=68c718aa&hm=c314d9c20ea139eaad5e4de875dbc2e4bd6f46be28b69a4f3aebc560ffa17642&" alt="Thumbnail Discord App" />
+          <h3>Aplikasi ToDo List</h3>
+          <p>Interactive daily task management app with React.</p>
+          <button class="btn-details" data-project="2">Lihat Detail</button>
+        </div>
+        <div class="project-card scroll-animation" data-project="3" data-category="Game Server">
+          <img class="lazy" data-src="https://cdn.discordapp.com/attachments/1381375677890298019/1405002369837564015/image.png?ex=68c816ac&is=68c6c52c&hm=dcb9971ab5a9f84e03059dc4611f54e5e947b76eaf5a6af4890ddd3a9678165e&" alt="Thumbnail Game Server" />
+          <h3>Game Server</h3>
+          <p>create an attractive game server with abundant features.</p>
+          <button class="btn-details" data-project="3">Lihat Detail</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <h2>Testimoni</h2>
+      <div class="testimonial-container">
+        <div class="testimonial active">
+          <p>"gg bang!"</p>
+          <h4>- Davi Syahrul</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Desainny gacor kang dipay."</p>
+          <h4>- Mrzky</h4>
+        </div>
+        <div class="testimonial">
+          <p>"menyala dipaykuhhh."</p>
+          <h4>- Natasya Adinda</h4>
+        </div>
+         <div class="testimonial">
+          <p>"kapan lagi payy."</p>
+          <h4>- fawazz</h4>
+        </div>
+         <div class="testimonial">
+          <p>"Next Jangan Mahal2 broo"</p>
+          <h4>- kurniawan</h4>
+        </div>    
+         <div class="testimonial">
+          <p>"gg tapi sloweres tai"</p>
+          <h4>- fatima azzahra</h4>
+        </div>      
+      </div>
+      <div class="testimonial-buttons">
+        <button id="prevTestimonial">&#10094;</button>
+        <button id="nextTestimonial">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="contact scroll-animation" id="contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:anggisptr17@gmail.com">anggisptr17@gmail.com</a></p>
+      <p>Telepon: 0857-2448-1185</p>
+    </section>
+  </main>
+
+  <button id="backToTop" title="Kembali ke atas">&#8679;</button>
+
+  <!-- Modal Project Detail -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
